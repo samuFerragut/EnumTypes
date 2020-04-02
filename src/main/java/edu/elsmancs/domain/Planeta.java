@@ -1,5 +1,7 @@
 package edu.elsmancs.domain;
 
+import java.util.EnumSet;
+
 public enum Planeta {
 
     MERCURY(3.303e+23, 2.4397e6),
@@ -39,5 +41,13 @@ public enum Planeta {
 
     private double gravedad(Planeta planeta) {
         return G * getMasa() / (getRadio() * getRadio());
+    }
+
+    public static EnumSet<Planeta> getPlanetasTerrestres() {
+        return EnumSet.range(Planeta.MERCURY, Planeta.MARS);
+    }
+
+    public static EnumSet<Planeta> getGigantesGaseosos(){
+        return EnumSet.complementOf(getPlanetasTerrestres());
     }
 }

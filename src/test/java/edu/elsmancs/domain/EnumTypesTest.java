@@ -1,5 +1,6 @@
 package edu.elsmancs.domain;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
 
 import edu.elsmancs.domain.Planeta;
