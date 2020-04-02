@@ -15,8 +15,16 @@ public enum Planeta {
     private double radio = 0d;
     public static final double G = 6.67300e-11;
 
-    private Planeta(double masa, double radio) {
+    Planeta(double masa, double radio) {
         this.masa = masa;
         this.radio = radio;
+    }
+
+    public double getMasa() {
+        return this.masa;
+    }
+
+    public double getRadio() {
+        return this.radio;
     }
 }
