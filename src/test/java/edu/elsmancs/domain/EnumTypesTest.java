@@ -1,13 +1,12 @@
-package org.foobarspam.arnoldEnumType.test;
+package edu.elsmancs.domain;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
 
-import org.foobarspam.arnoldEnumType.logica.Planeta;
+import edu.elsmancs.domain.Planeta;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class ArnoldEnumTypeTest {
+public class EnumTypesTest {
 
     public static String[] planetas;
 
